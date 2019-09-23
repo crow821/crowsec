@@ -1,0 +1,13 @@
+1. windows简单基础_01_学习内容
+2. windows简单基础_02_常见目录
+3. windows简单基础_03_读取用户密码
+4. windows简单基础_04_Hosts文件
+5. windows简单基础_05_服务
+6. windows简单基础_06_端口
+7. windows简单基础_07_DOS命令(上)
+8. windows简单基础_08_DOS命令(中)
+9. windows简单基础_09_DOS命令(下)
+10. windows简单基础_10_渗透中常用的命令
+11. windows简单基础_10_BAT文件
+
+https://space.bilibili.com/29903122
