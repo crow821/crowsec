@@ -5,6 +5,8 @@ from fake_useragent import UserAgent
 
 
 ua = UserAgent()
+# 如果遇到报错ssl证书833的情况，请使用以下
+# ua = UserAgent(verify_ssl=False)
 
 # ip138
 headers_ip138 = {
