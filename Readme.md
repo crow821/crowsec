@@ -10,12 +10,16 @@
 
 4. 大家感觉需要讲的地方也可以和我说，我可能会特别关注的。
 
-   ​																		                                                                                       	 
+   
    ​                                                                                                                                                          by: crow
+   
+   公众号：
+   
+   <img src="gzh.jpg">
    
    ### <font color="gray">可以加我wx</font>
    
    ​          
 
-<img src="Wetchat.jpeg" style="zoom:25%;" />
+<img src="Wetchat.jpeg"  height="500" width="400"  />
 
