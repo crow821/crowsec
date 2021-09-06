@@ -6,6 +6,7 @@
 import re, requests
 from fake_useragent import UserAgent
 
+
 ua = UserAgent()
 
 def domain_level(domain):
