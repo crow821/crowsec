@@ -43,3 +43,10 @@
 # star
 
 [![Stargazers over time](https://starchart.cc/crow821/crowsec.svg)](https://starchart.cc/crow821/crowsec) 
+
+
+
+https://img.shields.io/github/stars/crow821/crowsec?style=plastic
+
+
+
