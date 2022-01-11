@@ -40,3 +40,6 @@
 
 <img src="Wetchat.jpeg"  height="500" width="400"  />
 
+# star
+
+[![Stargazers over time](https://starchart.cc/crow821/crowsec.svg)](https://starchart.cc/crow821/crowsec) 
