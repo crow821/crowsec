@@ -46,7 +46,3 @@
 
 
 
-https://img.shields.io/github/stars/crow821/crowsec?style=plastic
-
-
-
