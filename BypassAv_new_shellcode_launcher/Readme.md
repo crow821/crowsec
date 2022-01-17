@@ -7,6 +7,8 @@
 
 工具估计已经失效！！！仅供参考！
 
+工具详细信息：https://mp.weixin.qq.com/s/MHZT_Z2dA4FvzAytfdyuGQ
+
 # 2. 免杀效果
 
 2.1 **静态免杀**
