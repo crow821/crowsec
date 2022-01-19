@@ -9,6 +9,12 @@
 
 工具详细信息：https://mp.weixin.qq.com/s/MHZT_Z2dA4FvzAytfdyuGQ
 
+# update
+
+最新免杀`crowsec_bypass_wdf0119.exe`
+
+原免杀已经不能过wdf
+
 # 2. 免杀效果
 
 2.1 **静态免杀**
