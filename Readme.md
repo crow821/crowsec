@@ -67,7 +67,7 @@
 
 # License
 
-Copyright © 2022 [crow821](https://github.com/crow821)
+Copyright © 2023 [crow821](https://github.com/crow821)
 
 本项目遵循协议：[GPL--3.0 License](https://github.com/crow821/crowsec/blob/master/LICENSE)
 
