@@ -1,0 +1,36 @@
+FROM ubuntu:14.04
+
+LABEL maintainer="crowsec"
+
+ENV VERSION 0.48.0
+ENV TZ=Asia/Shanghai
+
+# 安装依赖软件包
+RUN apt-get update && apt-get install -y wget tar supervisor
+
+# 设置时区
+RUN ln -snf /usr/share/zoneinfo/${TZ} /etc/localtime && echo ${TZ} > /etc/timezone
+
+# 判断系统并下载 frp
+RUN if [ "$(uname -m)" = "x86_64" ]; then export PLATFORM=amd64 ; \
+    elif [ "$(uname -m)" = "aarch64" ]; then export PLATFORM=arm64 ; \
+    elif [ "$(uname -m)" = "armv7" ]; then export PLATFORM=arm ; \
+    elif [ "$(uname -m)" = "armv7l" ]; then export PLATFORM=arm ; \
+    elif [ "$(uname -m)" = "armhf" ]; then export PLATFORM=arm ; fi \
+    && wget --no-check-certificate https://github.com/fatedier/frp/releases/download/v${VERSION}/frp_${VERSION}_linux_${PLATFORM}.tar.gz \
+	&& sleep 5 \
+    && tar xzf frp_${VERSION}_linux_${PLATFORM}.tar.gz \
+    && cd frp_${VERSION}_linux_${PLATFORM} \
+    && mkdir /frp\
+    && mv frpc /frp \
+    && mv frps /frp \
+    && cd .. \
+    && rm -rf *.tar.gz frp_${VERSION}_linux_${PLATFORM}
+
+# 拷贝配置文件和监控进程工具
+COPY ./frpc.ini /frp/
+COPY ./frps.ini /frp/
+COPY frpcs.conf /etc/supervisor/conf.d/
+
+# 启动 supervisord
+CMD ["/usr/bin/supervisord"]
